@@ -6,7 +6,7 @@
 # operation.
 
 
-def calculator(first_num,second_num,sign):
+def calculator(first_num, second_num, sign):
     if sign == "+":
         result = first_num + second_num
     elif sign == "-":
@@ -34,12 +34,13 @@ def main():
         main()
     if sign == "+" or sign == "/" or sign == "-" or sign == "%" or sign == "*":
         calculator(first_num, second_num, sign)
-        result = calculator(first_num,second_num,sign)
+        result = calculator(first_num, second_num, sign)
         print(f"{first_num} {sign} {second_num} = {result}")
-    
+
     elif sign != "+" or sign != "/" or sign != "-" or sign != "%" or sign != "*":
         print("You must enter a Valid operation")
         main()
+
 
 if __name__ == "__main__":
     main()
